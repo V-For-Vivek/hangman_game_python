@@ -97,9 +97,20 @@ def word_lst():
         "Lemon",
         "Kiwi",
         "Guvava",
-        "Straberry"
+        "Straberry",
+        "Papaya",
     ]
-    country = ["India", "China", "America", "Australia", "Russia", "Canada", "Italy","Germany"]
+    country = [
+        "India",
+        "China",
+        "America",
+        "Australia",
+        "Russia",
+        "Canada",
+        "Italy",
+        "Germany",
+        "New Zealand",
+    ]
     word = choice(fruits + country)
     if word in fruits:
         return "Hint: The word is fruit name", word.lower()
