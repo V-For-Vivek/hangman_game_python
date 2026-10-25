@@ -130,7 +130,7 @@ def hangman_game():
         print("Guess the word :", blank_word)
         letter = input("Enter your guess : ")
         indexs = check_the_letter(letter, word)
-        if len(indexs) == 0:
+        if not len(indexs):
             incorrect_guesses = i
             display_hangman(incorrect_guesses)
         else:
